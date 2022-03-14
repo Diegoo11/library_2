@@ -1,0 +1,244 @@
+/*
+    font-family: 'Fredoka', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+*/
+$c50:#f0f9ff;
+$c100:#deeffb;
+$c200:#bae6fd;
+$c300:#7dd3fc;
+$c400:#38bdf8;
+$c500:#0ea5e9;
+$c600:#0284c7;
+$c700:#0369a1;
+$c800:#075985;
+$c900:#0c4a6e;
+
+*{
+    font-family: 'Ubuntu', sans-serif;
+}
+body{
+    background-color: $c100;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100vw;
+    height: 100vh;
+    
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 5vw 25px 5vw;
+    background-color: $c50; 
+    align-items: center;
+    box-shadow: 6px 0 10px $c200;
+    img{
+        filter: invert(100);
+        height: 60px;
+        margin-right: 20px;
+        filter: opacity(0.4) drop-shadow(0 0 0 $c900)
+    }
+    span{
+        display: flex;
+        align-items: center;
+        font-size: 2.3rem;
+        font-weight: Bold ;
+        color: $c800;
+        margin: 10px;
+    }
+    button{
+        background-color: $c700;
+        padding: 12px 24px;
+        border: 0;
+        color: $c100;
+        border-radius: 20px;
+        font-weight: bold;
+        transition: all 200ms;
+        font-size: 1.4rem;
+    }
+    
+}
+button:hover{
+    transform: scale(1.07);
+    cursor: pointer;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    background-color: $c200;
+    color: $c800;
+    box-shadow: -6px 0 10px $c300;
+}
+.contentMayor{
+    margin: 60px auto ;
+    height: 80%;
+    width: 78vw;
+}
+.content{
+    display: grid;
+    grid-template-columns:repeat(auto-fit, minmax(315px, 1fr));
+    gap: 40px;  
+}
+
+.card{
+
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 1.5rem;
+    background-color: $c200;
+    color: $c800;
+    padding: 20px;
+    max-width: 400px;
+    box-shadow: 12px 12px $c300;
+    span{
+        margin: 3px 0;
+    }
+    
+}
+.fondo {
+    filter: blur(10px);
+}
+.screen{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top:0;
+    left:0;
+    background-color: rgba($color: #000000, $alpha: .2);
+}
+.simodal{
+    position: absolute;
+    content: '';
+    background-color: #f0eef1;
+    width: 320px;
+    height: 480px;
+    top: 20%;
+    left: 39%;
+    transition: all 200ms;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    gap: 0px;
+    justify-content: space-between;
+    font-size: 1.3rem;
+    .span{
+        font-weight: bold;
+        font-size: 1.9rem;
+        margin-bottom: 45px;
+    }
+    button{
+        background-color: $c700;
+        padding: 12px 24px;
+        border: 0;
+        color: $c100;
+        border-radius: 7px;
+        font-weight: bold;
+        transition: all 200ms;
+        width: 150px;
+        font-size: 1.07rem;
+        margin: 10px auto 5px auto;
+        font-size: 1.4rem;
+        margin-top: 50px;
+    }
+    
+    .checkbox{
+        margin-top: 30px;
+    }
+    span{
+        margin: 8px
+    };
+}
+input[type=text], input[type=number]{
+    border: 0;
+    font-size: 1.3rem;
+    width: 70%;
+    padding: 10px;
+    
+}
+input[type=text]:focus, input[type=number]:focus{
+    outline: none;
+}
+.nomodal{
+    width: 0px;
+    height: 0px;
+    font-size: 0.001rem;
+    padding: 0;
+    *{
+        width: 0px;
+        height: 0px;
+        font-size: 0.001rem;  
+        padding: 0;     
+    }
+    .span{
+        font-size: 0.001rem;
+    }
+    button{
+        font-size: 0.001rem;
+        width: 0px;
+        height: 0px;
+        appearance: none;
+        padding: 0;
+    }
+    input{
+        padding: 0
+    };
+    top: 50%;
+    left: 50%;
+}
+
+.btnReadTrue {
+    background-color:   green;
+    padding: 12px 24px;
+    border: 0;
+    color: $c100;
+    border-radius: 7px;
+    
+    transition: all 200ms;
+    width: 150px;
+    font-size: 1.07rem;
+    margin: 10px auto 5px auto;
+    font-size: 1.4rem;
+    margin-top: 50px;
+}
+.btnReadFalse {
+    background-color:   red;
+    padding: 12px 24px;
+    border: 0;
+    color: $c100;
+    border-radius: 7px;
+    
+    transition: all 200ms;
+    width: 150px;
+    font-size: 1.07rem;
+    margin: 10px auto 5px auto;
+    font-size: 1.4rem;
+    margin-top: 50px;
+}
+
+.btnDelete{
+    background-color: $c700;
+    padding: 12px 24px;
+    border: 0;
+    color: $c100;
+    border-radius: 7px;
+    font-weight: bold;
+    transition: all 200ms;
+    width: 150px;
+    font-size: 1.40rem;
+    margin: 10px auto 5px auto;  
+}

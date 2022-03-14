@@ -1,0 +1,308 @@
+/*
+    font-family: 'Fredoka', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+*/
+* {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+  background-color: #deeffb;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100vw;
+  height: 100vh;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 15px 5vw 25px 5vw;
+  background-color: #f0f9ff;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 6px 0 10px #bae6fd;
+          box-shadow: 6px 0 10px #bae6fd;
+}
+
+header img {
+  -webkit-filter: invert(100);
+          filter: invert(100);
+  height: 60px;
+  margin-right: 20px;
+  -webkit-filter: opacity(0.4) drop-shadow(0 0 0 #0c4a6e);
+          filter: opacity(0.4) drop-shadow(0 0 0 #0c4a6e);
+}
+
+header span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 2.3rem;
+  font-weight: Bold;
+  color: #075985;
+  margin: 10px;
+}
+
+header button {
+  background-color: #0369a1;
+  padding: 12px 24px;
+  border: 0;
+  color: #deeffb;
+  border-radius: 20px;
+  font-weight: bold;
+  -webkit-transition: all 200ms;
+  transition: all 200ms;
+  font-size: 1.4rem;
+}
+
+button:hover {
+  -webkit-transform: scale(1.07);
+          transform: scale(1.07);
+  cursor: pointer;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px;
+  background-color: #bae6fd;
+  color: #075985;
+  -webkit-box-shadow: -6px 0 10px #7dd3fc;
+          box-shadow: -6px 0 10px #7dd3fc;
+}
+
+.contentMayor {
+  margin: 60px auto;
+  height: 80%;
+  width: 78vw;
+}
+
+.content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(315px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(315px, 1fr));
+  gap: 40px;
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 1rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  font-size: 1.5rem;
+  background-color: #bae6fd;
+  color: #075985;
+  padding: 20px;
+  max-width: 400px;
+  -webkit-box-shadow: 12px 12px #7dd3fc;
+          box-shadow: 12px 12px #7dd3fc;
+}
+
+.card span {
+  margin: 3px 0;
+}
+
+.fondo {
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
+}
+
+.screen {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.simodal {
+  position: absolute;
+  content: '';
+  background-color: #f0eef1;
+  width: 320px;
+  height: 480px;
+  top: 20%;
+  left: 39%;
+  -webkit-transition: all 200ms;
+  transition: all 200ms;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 40px 20px;
+  gap: 0px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 1.3rem;
+}
+
+.simodal .span {
+  font-weight: bold;
+  font-size: 1.9rem;
+  margin-bottom: 45px;
+}
+
+.simodal button {
+  background-color: #0369a1;
+  padding: 12px 24px;
+  border: 0;
+  color: #deeffb;
+  border-radius: 7px;
+  font-weight: bold;
+  -webkit-transition: all 200ms;
+  transition: all 200ms;
+  width: 150px;
+  font-size: 1.07rem;
+  margin: 10px auto 5px auto;
+  font-size: 1.4rem;
+  margin-top: 50px;
+}
+
+.simodal .checkbox {
+  margin-top: 30px;
+}
+
+.simodal span {
+  margin: 8px;
+}
+
+input[type=text], input[type=number] {
+  border: 0;
+  font-size: 1.3rem;
+  width: 70%;
+  padding: 10px;
+}
+
+input[type=text]:focus, input[type=number]:focus {
+  outline: none;
+}
+
+.nomodal {
+  width: 0px;
+  height: 0px;
+  font-size: 0.001rem;
+  padding: 0;
+  top: 50%;
+  left: 50%;
+}
+
+.nomodal * {
+  width: 0px;
+  height: 0px;
+  font-size: 0.001rem;
+  padding: 0;
+}
+
+.nomodal .span {
+  font-size: 0.001rem;
+}
+
+.nomodal button {
+  font-size: 0.001rem;
+  width: 0px;
+  height: 0px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  padding: 0;
+}
+
+.nomodal input {
+  padding: 0;
+}
+
+.btnReadTrue {
+  background-color: green;
+  padding: 12px 24px;
+  border: 0;
+  color: #deeffb;
+  border-radius: 7px;
+  -webkit-transition: all 200ms;
+  transition: all 200ms;
+  width: 150px;
+  font-size: 1.07rem;
+  margin: 10px auto 5px auto;
+  font-size: 1.4rem;
+  margin-top: 50px;
+}
+
+.btnReadFalse {
+  background-color: red;
+  padding: 12px 24px;
+  border: 0;
+  color: #deeffb;
+  border-radius: 7px;
+  -webkit-transition: all 200ms;
+  transition: all 200ms;
+  width: 150px;
+  font-size: 1.07rem;
+  margin: 10px auto 5px auto;
+  font-size: 1.4rem;
+  margin-top: 50px;
+}
+
+.btnDelete {
+  background-color: #0369a1;
+  padding: 12px 24px;
+  border: 0;
+  color: #deeffb;
+  border-radius: 7px;
+  font-weight: bold;
+  -webkit-transition: all 200ms;
+  transition: all 200ms;
+  width: 150px;
+  font-size: 1.40rem;
+  margin: 10px auto 5px auto;
+}
+/*# sourceMappingURL=style.css.map */
